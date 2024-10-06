@@ -4,7 +4,7 @@ import {Css} from "../../../GlobalStyle";
 export const StyledColumnTemplate = styled.div<Css>`
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: ${({rowGap}) => rowGap};
+    row-gap: ${({gap}) => gap};
     align-content: ${({alignContent}) => alignContent};
 `;
 export default StyledColumnTemplate;

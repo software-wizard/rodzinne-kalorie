@@ -6,22 +6,20 @@ export type Css = {
     padding?: string;
     margin?: string;
 
-    rowGap?: string;
-    columnGap?: string;
+    gap?: string;
     alignContent?: string;
     justifyContent?: string;
     alignItems?: string;
     justifyItems?: string;
 }
 
-export let DefaultCssGrid = {
+export let DefaultCss = {
     width: '100%',
     height: '100%',
     padding: '0px',
     margin: '0px',
 
-    rowGap: '0px',
-    columnGap: '0px',
+    gap: '0px',
     alignContent: 'stretch',
     justifyContent: 'stretch',
     alignItems: 'stretch',

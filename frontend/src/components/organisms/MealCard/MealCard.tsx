@@ -17,9 +17,9 @@ export type MealCardProps = {
 const MealCard: React.FC<MealCardProps> = ({mealName = 'nazwa posiłku', macro}) => {
     return (
         <Card>
+            <ActionIcons></ActionIcons>
             <Label text={mealName} size = {Size.L}></Label>
             <MacroIcons macro={macro}></MacroIcons>
-            <ActionIcons></ActionIcons>
         </Card>
     );
 };

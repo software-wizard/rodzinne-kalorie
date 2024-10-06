@@ -1,21 +1,18 @@
 import styled from 'styled-components';
+import {COLOR_GREEN, COLOR_GREY} from "../../../GlobalStyle";
 
-// Stylizacja kontenera ikon akcji
 export const ActionIconsContainer = styled.div`
     position: absolute;
     top: 10px;
     right: 10px;
-    display: flex;
-    gap: 10px;
-    opacity: 0; /* Ukryj ikony, gdy nie najechano na kartę */
-    transition: opacity 0.3s ease; /* Płynne przejście */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 `;
 
-// Stylizacja pojedynczej ikony akcji
 export const ActionIcon = styled.div`
-  width: 24px;
-  height: 24px;
-  background-color: #4caf50; /* Zielona ikona */
+  width: 2rem;
+  height: 2rem;
+  background-color: ${COLOR_GREEN.color900};
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -23,10 +20,10 @@ export const ActionIcon = styled.div`
   cursor: pointer;
 
   &:hover {
-    background-color: #388e3c; /* Zmiana koloru ikony po hoverze */
+      background-color: ${COLOR_GREEN.color900};
   }
 
   svg {
-    fill: white; /* Kolor ikony (np. SVG) */
+    fill: ${COLOR_GREY.color100};
   }
 `;

@@ -1,16 +1,16 @@
 import React from 'react';
 import {StyledColumnTemplate} from './SingleColumnGridTemplate.styles';
-import {Css, DefaultCssGrid} from "../../../GlobalStyle";
+import {Css, DefaultCss} from "../../../GlobalStyle";
 
 export type ColumnTemplateProps = {
     css?: Css
     children?: React.ReactNode;
 };
 
-const SingleColumnGridTemplate: React.FC<ColumnTemplateProps> = ({children, css = DefaultCssGrid}) => {
+const SingleColumnGridTemplate: React.FC<ColumnTemplateProps> = ({children, css = DefaultCss}) => {
 
     css.alignContent = 'center'
-    css.rowGap= '3px'
+    css.gap= '3px'
 
     return (
         <StyledColumnTemplate {...css}>
