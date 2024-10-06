@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {ButtonProps} from './Button';
-import {COLOR_GREEN} from "../../../AppStyles";
+import {COLOR_GREEN} from "../../../GlobalStyle";
 
 export const StyledButton = styled.button<ButtonProps>`
     width: 100%;

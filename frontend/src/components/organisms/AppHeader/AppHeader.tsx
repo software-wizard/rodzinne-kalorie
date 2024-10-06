@@ -12,11 +12,10 @@ const AppHeader: React.FC<AppHeaderProps> = () => {
     return (
         <StyledAppHeader>
             <SingleRowGridTemplate>
-                <Button>abc</Button>
-                <Button>abc</Button>
-                <Button>abc</Button>
-                <Button>abc</Button>
-                <Button>abc</Button>
+                <Button>Jadłospis</Button>
+                <Button>Posiłki</Button>
+                <Button>Lista zakupów</Button>
+                <Button>Jadłożercy</Button>
             </SingleRowGridTemplate>
         </StyledAppHeader>
     );

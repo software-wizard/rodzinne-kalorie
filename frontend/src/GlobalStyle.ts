@@ -50,8 +50,17 @@ export const COLOR_GREY = {
 
 const GlobalStyle = createGlobalStyle`
     body {
-        background: WHITE;
+        background: ${COLOR_GREY.color100};
         font-family: Open-Sans, Helvetica, Sans-Serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 `;
 

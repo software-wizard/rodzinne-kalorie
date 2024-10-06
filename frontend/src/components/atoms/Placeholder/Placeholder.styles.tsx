@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { PlaceholderProps } from './Placeholder';
-import {COLOR_GREEN, COLOR_GREY} from "../../../AppStyles";
+import {COLOR_GREEN, COLOR_GREY} from "../../../GlobalStyle";
 
 export const StyledPlaceholder = styled.div<PlaceholderProps>`
     width: ${p => p.width};
