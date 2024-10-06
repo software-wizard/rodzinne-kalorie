@@ -3,7 +3,7 @@ import {StyledColumnTemplate} from './SingleColumnGridTemplate.styles';
 import {Css, DefaultCssGrid} from "../../../GlobalStyle";
 
 export type ColumnTemplateProps = {
-    css: Css
+    css?: Css
     children?: React.ReactNode;
 };
 
@@ -13,7 +13,7 @@ const SingleColumnGridTemplate: React.FC<ColumnTemplateProps> = ({children, css 
     css.rowGap= '3px'
 
     return (
-        <StyledColumnTemplate css={css}>
+        <StyledColumnTemplate {...css}>
             {children}
         </StyledColumnTemplate>
     );

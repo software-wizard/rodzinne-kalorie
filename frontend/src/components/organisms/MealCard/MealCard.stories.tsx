@@ -8,7 +8,7 @@ export default {
 } as Meta;
 
 const Template: StoryFn<MealCardProps> = (args) =>
-    <div style={{width: '14vw', height: '15vh', border: 'BROWN 1px solid'}}>
+    <div style={{width: '14vw', height: '15vh', border: 'BROWN 0px solid'}}>
         <MealCard {...args} />
     </div>;
 
