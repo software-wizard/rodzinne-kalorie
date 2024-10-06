@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import {LabelProps} from './Label';
+import {IconWithValueProps} from './IconWithValue';
 import {COLOR_GREEN, Size} from '../../../GlobalStyle';
 
 
-export const StyledLabel = styled.p<LabelProps>`
+export const StyledLabel = styled.p<IconWithValueProps>`
     ${({size}) => {
         switch (size) {
             case Size.XS:
@@ -33,8 +33,6 @@ export const StyledLabel = styled.p<LabelProps>`
         }
     }}
     color: ${COLOR_GREEN.color1000};
-    margin-block: 0;
-    line-height: 1;
 `;
 
 

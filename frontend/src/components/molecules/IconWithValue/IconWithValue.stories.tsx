@@ -1,46 +1,46 @@
 import React from 'react';
 import {StoryFn, Meta} from '@storybook/react';
-import Label, {LabelProps} from './Label';
+import IconWithValue, {IconWithValueProps} from './IconWithValue';
 import {Size} from "../../../GlobalStyle";
 
 export default {
-    title: 'Components/atoms/IconWithValue',
-    component: Label,
+    title: 'Components/molecules/IconWithValue',
+    component: IconWithValue,
 } as Meta;
 
-const Template: StoryFn<LabelProps> = (args) => <Label {...args} />;
-
-export const DEFAULT = Template.bind({});
-DEFAULT.args = {
-    text: 'Label',
-};
+const Template: StoryFn<IconWithValueProps> = (args) => <IconWithValue {...args} />;
 
 export const XS = Template.bind({});
 XS.args = {
-    text: 'IconWithValue XS',
+    label: 'XS',
+    value: '123.45',
     size: Size.XS,
 };
 
 export const S = Template.bind({});
 S.args = {
-    text: 'IconWithValue S',
+    label: 'S',
+    value: '123.45',
     size: Size.S,
 };
 
 export const M = Template.bind({});
 M.args = {
-    text: 'IconWithValue M',
+    label: 'M',
+    value: '123.45',
     size: Size.M,
 };
 
 export const L = Template.bind({});
 L.args = {
-    text: 'IconWithValue L',
+    label: 'L',
+    value: '123.45',
     size: Size.L,
 };
 
 export const XL = Template.bind({});
 XL.args = {
-    text: 'IconWithValue XL',
+    label: 'XL',
+    value: '123.45',
     size: Size.XL,
 };

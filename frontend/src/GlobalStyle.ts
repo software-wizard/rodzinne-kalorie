@@ -1,5 +1,29 @@
 import {createGlobalStyle} from 'styled-components';
 
+export type Css = {
+    width?: string;
+    height?: string;
+    padding?: string;
+    margin?: string;
+
+    rowGap?: string;
+    columnGap?: string;
+    alignContent?: string;
+    justifyContent?: string;
+    alignItems?: string;
+    justifyItems?: string;
+}
+
+export let DefaultCssGrid = {
+    rowGap: '0px',
+    columnGap: '0px',
+    alignContent: 'stretch',
+    justifyContent: 'stretch',
+    alignItems: 'stretch',
+    justifyItems: 'stretch'
+}
+
+
 export const PRIMARY = "#4CAF50";
 export const DARK_PRIMARY = "#388E3C";
 export const LIGHT_PRIMARY = "#C8E6C9";
@@ -9,7 +33,7 @@ export const PRIMARY_TEXT = "#212121";
 export const SECONDARY_TEXT = "#757575";
 export const DIVIDER = "#BDBDBD";
 
-export enum Size{
+export enum Size {
     XS, S, M, L, XL
 }
 

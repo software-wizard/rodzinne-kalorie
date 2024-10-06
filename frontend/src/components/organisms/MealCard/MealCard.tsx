@@ -7,12 +7,18 @@ import {Size} from "../../../GlobalStyle";
 
 export type MealCardProps = {
     mealName?: string;
+    macro:{
+        calories: number;
+        carbohydrates: number;
+        protein: number;
+        fat: number;
+    }
 };
-const MealCard: React.FC<MealCardProps> = ({mealName = 'nazwa posiłku'}) => {
+const MealCard: React.FC<MealCardProps> = ({mealName = 'nazwa posiłku', macro}) => {
     return (
         <Card>
             <Label text={mealName} size = {Size.L}></Label>
-            <MacroIcons></MacroIcons>
+            <MacroIcons macro={macro}></MacroIcons>
             <ActionIcons></ActionIcons>
         </Card>
     );

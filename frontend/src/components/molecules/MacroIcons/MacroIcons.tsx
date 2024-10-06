@@ -1,19 +1,26 @@
 import React from 'react';
-import {StyledMacroIcons} from './MacroIcons.styles';
+import {Size} from "../../../GlobalStyle";
+import SingleRowGridTemplate from "../../Templates/SingleRowGridTemplate/SingleRowGridTemplate";
+import IconWithValue from ".././IconWithValue/IconWithValue";
 
 export type MacroIconsProps = {
-    width?: string;
-    height?: string;
-    name?: string;
-    children?: React.ReactNode;
+    macro: {
+        calories: number;
+        carbohydrates: number;
+        protein: number;
+        fat: number;
+    }
 };
 
-const MacroIcons: React.FC<MacroIconsProps> = ({name}) => {
+const MacroIcons: React.FC<MacroIconsProps> = ({macro}) => {
 
     return (
-        <StyledMacroIcons>
-            <p>Macro icons</p>
-        </StyledMacroIcons>
+        <SingleRowGridTemplate>
+            <IconWithValue label={'K'} value={macro.calories.toString()} size={Size.S}/>
+            <IconWithValue label={'W'} value={macro.carbohydrates.toString()} size={Size.S}/>
+            <IconWithValue label={'B'} value={macro.protein.toString()} size={Size.S}/>
+            <IconWithValue label={'T'} value={macro.fat.toString()} size={Size.S}/>
+        </SingleRowGridTemplate>
     );
 };
 

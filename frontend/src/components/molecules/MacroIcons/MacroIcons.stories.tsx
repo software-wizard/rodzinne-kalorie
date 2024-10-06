@@ -11,5 +11,10 @@ const Template: StoryFn<MacroIconsProps> = (args) => <MacroIcons {...args} />;
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {
-    name: 'MacroIcons',
+    macro: {
+        calories: 543,
+        carbohydrates: 76.2,
+        protein: 28.1,
+        fat: 9.0
+    },
 };
