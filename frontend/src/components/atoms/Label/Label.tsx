@@ -1,18 +1,16 @@
 import React from 'react';
 import {StyledLabel} from './Label.styles';
+import {Size} from "../../../GlobalStyle";
 
 export type LabelProps = {
-    width?: string;
-    height?: string;
-    name?: string;
-    children?: React.ReactNode;
+    text?: string;
+    size?: Size
 };
 
-const Label: React.FC<LabelProps> = ({ name, children}) => {
-
+const Label: React.FC<LabelProps> = ({ text = 'some text', size = Size.M }) => {
     return (
-        <StyledLabel>
-            <p>{name}</p>
+        <StyledLabel size={size}>
+            {text}
         </StyledLabel>
     );
 };

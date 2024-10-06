@@ -14,5 +14,5 @@ const Template: StoryFn<MealCardProps> = (args) =>
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {
-    name: 'MealCard',
+    mealName: 'Owsianka z owocami',
 };

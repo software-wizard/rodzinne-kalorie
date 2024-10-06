@@ -9,6 +9,10 @@ export const PRIMARY_TEXT = "#212121";
 export const SECONDARY_TEXT = "#757575";
 export const DIVIDER = "#BDBDBD";
 
+export enum Size{
+    XS, S, M, L, XL
+}
+
 export const COLOR_GREEN =
     {
         color100: "#ECFDF5",
