@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import {SingleRowGridTemplateProps} from './SingleRowGridTemplate';
 import {Css} from "../../../GlobalStyle";
 
-export const StyledGridTemplate = styled.div<Css>`
+export const StyledSingleColumnGridTemplate = styled.div<Css>`
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
-    column-gap: ${({gap}) => gap};
+    column-gap: ${({columnGap}) => columnGap};
 `;
-export default StyledGridTemplate;
+export default StyledSingleColumnGridTemplate;

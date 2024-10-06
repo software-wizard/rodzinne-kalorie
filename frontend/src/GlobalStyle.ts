@@ -6,7 +6,10 @@ export type Css = {
     padding?: string;
     margin?: string;
 
-    gap?: string;
+    rows:number;
+    columns: number;
+    columnGap?: string;
+    rowGap?: string;
     alignContent?: string;
     justifyContent?: string;
     alignItems?: string;
@@ -19,7 +22,10 @@ export let DefaultCss = {
     padding: '0px',
     margin: '0px',
 
-    gap: '0px',
+    rows: 1,
+    columns: 1,
+    columnGap: '0',
+    rowGap: '0',
     alignContent: 'stretch',
     justifyContent: 'stretch',
     alignItems: 'stretch',

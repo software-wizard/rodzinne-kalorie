@@ -13,8 +13,5 @@ export const DEFAULT = Template.bind({});
 DEFAULT.args = {
     children:
         <React.Fragment>
-            <SingleColumnGridTemplate></SingleColumnGridTemplate>
-            <SingleColumnGridTemplate></SingleColumnGridTemplate>
-            <SingleColumnGridTemplate></SingleColumnGridTemplate>
         </React.Fragment>
 };

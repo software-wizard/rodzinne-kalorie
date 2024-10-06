@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledGridTemplate} from './SingleRowGridTemplate.styles';
+import {StyledSingleColumnGridTemplate} from './SingleRowGridTemplate.styles';
 import {Css, DefaultCss} from "../../../GlobalStyle";
 
 export type SingleRowGridTemplateProps = {
@@ -10,9 +10,9 @@ export type SingleRowGridTemplateProps = {
 const SingleRowGridTemplate: React.FC<SingleRowGridTemplateProps> = ({children, css = DefaultCss}) => {
 
     return (
-        <StyledGridTemplate {...css}>
+        <StyledSingleColumnGridTemplate {...css}>
             {children}
-        </StyledGridTemplate>
+        </StyledSingleColumnGridTemplate>
     );
 };
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0.8rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.2);
   padding: 5px;
   display: grid;

@@ -1,40 +1,44 @@
 import React from 'react';
-import {ActionIconsContainer, ActionIcon} from './ActionIcons.styles';
-import {FaEdit, FaTrash} from 'react-icons/fa';
-import SingleRowGridTemplate from "../../Templates/SingleRowGridTemplate/SingleRowGridTemplate";
-import SingleColumnGridTemplate from "../../Templates/ColumnTemplate/SingleColumnGridTemplate";
+import {ActionIcon, ActionIconsContainer} from './ActionIcons.styles';
+import {FaTrash, FaTree} from 'react-icons/fa';
+import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
+import {DefaultCss} from "../../../GlobalStyle";
 
 
 const ActionIcons: React.FC = () => {
+    let css = DefaultCss;
+    css.rows = 2;
+    css.columns = 3;
+    css.columnGap = '10px';
+    css.rowGap = '10px';
+
     return (
         <ActionIconsContainer className="action-icons">
-            <SingleColumnGridTemplate css={{gap: '2rem'}}>
-                <SingleRowGridTemplate css={{gap: '1rem'}}>
-                    <ActionIcon>
-                        <FaEdit/>
-                    </ActionIcon>
-                    <ActionIcon>
-                        <FaTrash/>
-                    </ActionIcon>
-                    <ActionIcon>
-                        <FaTrash/>
-                    </ActionIcon>
-                </SingleRowGridTemplate>
+            <GridTemplate css={css}>
+                <ActionIcon>
+                    <FaTree/>
+                </ActionIcon>
 
+                <ActionIcon>
+                    <FaTrash/>
+                </ActionIcon>
 
-                <SingleRowGridTemplate css={{gap: '2rem'}}>
-                    <ActionIcon>
-                        <FaEdit/>
-                    </ActionIcon>
-                    <ActionIcon>
-                        <FaTrash/>
-                    </ActionIcon>
+                <ActionIcon>
+                    <FaTrash/>
+                </ActionIcon>
 
-                    <ActionIcon>
-                        <FaTrash/>
-                    </ActionIcon>
-                </SingleRowGridTemplate>
-            </SingleColumnGridTemplate>
+                <ActionIcon>
+                    <FaTree/>
+                </ActionIcon>
+
+                <ActionIcon>
+                    <FaTrash/>
+                </ActionIcon>
+
+                <ActionIcon>
+                    <FaTrash/>
+                </ActionIcon>
+            </GridTemplate>
         </ActionIconsContainer>
     );
 };

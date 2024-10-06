@@ -1,8 +1,6 @@
 import React from 'react';
-import {StoryFn, Meta} from '@storybook/react';
+import {Meta, StoryFn} from '@storybook/react';
 import SingleRowGridTemplate, {SingleRowGridTemplateProps} from './SingleRowGridTemplate';
-import SingleColumnGridTemplate from "../ColumnTemplate/SingleColumnGridTemplate";
-import MealCard from "../../organisms/MealCard/MealCard";
 
 export default {
     title: 'Components/templates/SingleRowGridTemplate',
@@ -15,11 +13,5 @@ export const DEFAULT = Template.bind({});
 DEFAULT.args = {
     children:
         <React.Fragment>
-            <SingleColumnGridTemplate><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard></SingleColumnGridTemplate>
-            <SingleColumnGridTemplate><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard></SingleColumnGridTemplate>
-            <SingleColumnGridTemplate><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard></SingleColumnGridTemplate>
-            <SingleColumnGridTemplate><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard></SingleColumnGridTemplate>
-            <SingleColumnGridTemplate><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard></SingleColumnGridTemplate>
-            <SingleColumnGridTemplate><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard><MealCard></MealCard></SingleColumnGridTemplate>
         </React.Fragment>
 };

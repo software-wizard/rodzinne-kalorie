@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledColumnTemplate} from './SingleColumnGridTemplate.styles';
+import {StyledSingleColumnGridTemplate} from './SingleColumnGridTemplate.styles';
 import {Css, DefaultCss} from "../../../GlobalStyle";
 
 export type ColumnTemplateProps = {
@@ -8,14 +8,10 @@ export type ColumnTemplateProps = {
 };
 
 const SingleColumnGridTemplate: React.FC<ColumnTemplateProps> = ({children, css = DefaultCss}) => {
-
-    css.alignContent = 'center'
-    css.gap= '3px'
-
     return (
-        <StyledColumnTemplate {...css}>
+        <StyledSingleColumnGridTemplate {...css}>
             {children}
-        </StyledColumnTemplate>
+        </StyledSingleColumnGridTemplate>
     );
 };
 
