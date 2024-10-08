@@ -1,12 +1,12 @@
 import React from 'react';
 import {StyledGridTemplate} from './GridTemplate.styles';
-import {Css, DefaultCss} from "../../../GlobalStyle";
+import {Css, getDefaultCss} from "../../../GlobalStyle";
 
 export type GridTemplateProps = {
     css?: Css
     children?: React.ReactNode;
 };
-const GridTemplate: React.FC<GridTemplateProps> = ({children, css = DefaultCss}) => {
+const GridTemplate: React.FC<GridTemplateProps> = ({children, css = getDefaultCss()}) => {
 
     return (
         <StyledGridTemplate {...css}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {StoryFn, Meta} from '@storybook/react';
+import {Meta, StoryFn} from '@storybook/react';
 import MacroIcons, {MacroIconsProps} from './MacroIcons';
 
 export default {
@@ -7,7 +7,11 @@ export default {
     component: MacroIcons,
 } as Meta;
 
-const Template: StoryFn<MacroIconsProps> = (args) => <MacroIcons {...args} />;
+const Template: StoryFn<MacroIconsProps> = (args) => (
+    <div style={{width: '200px'}}>
+        <MacroIcons {...args} />
+    </div>
+);
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {

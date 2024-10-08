@@ -17,22 +17,3 @@ export const ActionIconsContainer = styled.div`
         //background-color: rgba(ECFDF5, 111, 0, 0.8)
     }
 `;
-
-export const ActionIcon = styled.div`
-    width: 2.3rem;
-    height: 2.3rem;
-    background-color: ${COLOR_GREEN.color900};
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    &:hover {
-        background-color: ${COLOR_GREEN.color700};
-    }
-
-    svg {
-        fill: ${COLOR_GREY.color100};
-    }
-`;

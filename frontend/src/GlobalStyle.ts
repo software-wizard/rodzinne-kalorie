@@ -6,7 +6,7 @@ export type Css = {
     padding?: string;
     margin?: string;
 
-    rows:number;
+    rows: number;
     columns: number;
     columnGap?: string;
     rowGap?: string;
@@ -16,20 +16,23 @@ export type Css = {
     justifyItems?: string;
 }
 
-export let DefaultCss = {
-    width: '100%',
-    height: '100%',
-    padding: '0px',
-    margin: '0px',
+export function getDefaultCss()
+{
+    return {
+        width: '100%',
+        height: '100%',
+        padding: '0px',
+        margin: '0px',
 
-    rows: 1,
-    columns: 1,
-    columnGap: '0',
-    rowGap: '0',
-    alignContent: 'stretch',
-    justifyContent: 'stretch',
-    alignItems: 'stretch',
-    justifyItems: 'stretch'
+        rows: 1,
+        columns: 1,
+        columnGap: '0',
+        rowGap: '0',
+        alignContent: 'stretch',
+        justifyContent: 'stretch',
+        alignItems: 'stretch',
+        justifyItems: 'stretch'
+    }
 }
 
 

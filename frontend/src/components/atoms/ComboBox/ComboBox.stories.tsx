@@ -3,7 +3,7 @@ import {StoryFn, Meta} from '@storybook/react';
 import ComboBox, {ComboBoxProps} from './ComboBox';
 
 export default {
-    title: 'Components/atoms/ComboBox',
+    title: 'Components/nowy/ComboBox',
     component: ComboBox,
 } as Meta;
 

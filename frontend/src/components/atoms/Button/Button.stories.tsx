@@ -11,7 +11,8 @@ const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {
-    name: 'Button',
+    onClick: () => {alert('Button clicked')},
+    children: 'Button'
 };
 
 const TemplateWithDivWrapper: StoryFn<ButtonProps> = (args) =>
@@ -20,5 +21,6 @@ const TemplateWithDivWrapper: StoryFn<ButtonProps> = (args) =>
     </div>
 export const WITH_DIV_WRAPPER = TemplateWithDivWrapper.bind({});
 WITH_DIV_WRAPPER.args = {
-    name: 'Button',
+    onClick: () => {alert('Button clicked')},
+    children: 'Button'
 };

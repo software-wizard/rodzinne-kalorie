@@ -2,11 +2,13 @@ import styled from 'styled-components';
 import {ButtonProps} from './Button';
 import {COLOR_GREEN} from "../../../GlobalStyle";
 
-export const StyledButton = styled.button<ButtonProps>`
+export const StyledButton = styled.button`
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: ${COLOR_GREEN.color900};
     color: ${COLOR_GREEN.color200};
     font-size: 1.5rem;

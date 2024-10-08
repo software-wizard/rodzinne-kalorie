@@ -1,0 +1,354 @@
+{
+  "days": [
+    {
+      "date": "2023-10-01",
+      "meals": [
+        {
+          "name": "Breakfast",
+          "macro": {
+            "calories": 300,
+            "carbohydrates": 50,
+            "protein": 20,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Lunch",
+          "macro": {
+            "calories": 600,
+            "carbohydrates": 80,
+            "protein": 30,
+            "fat": 20
+          }
+        },
+        {
+          "name": "Dinner",
+          "macro": {
+            "calories": 500,
+            "carbohydrates": 70,
+            "protein": 25,
+            "fat": 15
+          }
+        },
+        {
+          "name": "Dessert",
+          "macro": {
+            "calories": 200,
+            "carbohydrates": 30,
+            "protein": 5,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Supper",
+          "macro": {
+            "calories": 400,
+            "carbohydrates": 60,
+            "protein": 20,
+            "fat": 15
+          }
+        }
+      ]
+    },
+    {
+      "date": "2023-10-02",
+      "meals": [
+        {
+          "name": "Breakfast",
+          "macro": {
+            "calories": 300,
+            "carbohydrates": 50,
+            "protein": 20,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Lunch",
+          "macro": {
+            "calories": 600,
+            "carbohydrates": 80,
+            "protein": 30,
+            "fat": 20
+          }
+        },
+        {
+          "name": "Dinner",
+          "macro": {
+            "calories": 500,
+            "carbohydrates": 70,
+            "protein": 25,
+            "fat": 15
+          }
+        },
+        {
+          "name": "Dessert",
+          "macro": {
+            "calories": 200,
+            "carbohydrates": 30,
+            "protein": 5,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Supper",
+          "macro": {
+            "calories": 400,
+            "carbohydrates": 60,
+            "protein": 20,
+            "fat": 15
+          }
+        }
+      ]
+    },
+    {
+      "date": "2023-10-03",
+      "meals": [
+        {
+          "name": "Breakfast",
+          "macro": {
+            "calories": 300,
+            "carbohydrates": 50,
+            "protein": 20,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Lunch",
+          "macro": {
+            "calories": 600,
+            "carbohydrates": 80,
+            "protein": 30,
+            "fat": 20
+          }
+        },
+        {
+          "name": "Dinner",
+          "macro": {
+            "calories": 500,
+            "carbohydrates": 70,
+            "protein": 25,
+            "fat": 15
+          }
+        },
+        {
+          "name": "Dessert",
+          "macro": {
+            "calories": 200,
+            "carbohydrates": 30,
+            "protein": 5,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Supper",
+          "macro": {
+            "calories": 400,
+            "carbohydrates": 60,
+            "protein": 20,
+            "fat": 15
+          }
+        }
+      ]
+    },
+    {
+      "date": "2023-10-04",
+      "meals": [
+        {
+          "name": "Breakfast",
+          "macro": {
+            "calories": 300,
+            "carbohydrates": 50,
+            "protein": 20,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Lunch",
+          "macro": {
+            "calories": 600,
+            "carbohydrates": 80,
+            "protein": 30,
+            "fat": 20
+          }
+        },
+        {
+          "name": "Dinner",
+          "macro": {
+            "calories": 500,
+            "carbohydrates": 70,
+            "protein": 25,
+            "fat": 15
+          }
+        },
+        {
+          "name": "Dessert",
+          "macro": {
+            "calories": 200,
+            "carbohydrates": 30,
+            "protein": 5,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Supper",
+          "macro": {
+            "calories": 400,
+            "carbohydrates": 60,
+            "protein": 20,
+            "fat": 15
+          }
+        }
+      ]
+    },
+    {
+      "date": "2023-10-05",
+      "meals": [
+        {
+          "name": "Breakfast",
+          "macro": {
+            "calories": 300,
+            "carbohydrates": 50,
+            "protein": 20,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Lunch",
+          "macro": {
+            "calories": 600,
+            "carbohydrates": 80,
+            "protein": 30,
+            "fat": 20
+          }
+        },
+        {
+          "name": "Dinner",
+          "macro": {
+            "calories": 500,
+            "carbohydrates": 70,
+            "protein": 25,
+            "fat": 15
+          }
+        },
+        {
+          "name": "Dessert",
+          "macro": {
+            "calories": 200,
+            "carbohydrates": 30,
+            "protein": 5,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Supper",
+          "macro": {
+            "calories": 400,
+            "carbohydrates": 60,
+            "protein": 20,
+            "fat": 15
+          }
+        }
+      ]
+    },
+    {
+      "date": "2023-10-06",
+      "meals": [
+        {
+          "name": "Breakfast",
+          "macro": {
+            "calories": 300,
+            "carbohydrates": 50,
+            "protein": 20,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Lunch",
+          "macro": {
+            "calories": 600,
+            "carbohydrates": 80,
+            "protein": 30,
+            "fat": 20
+          }
+        },
+        {
+          "name": "Dinner",
+          "macro": {
+            "calories": 500,
+            "carbohydrates": 70,
+            "protein": 25,
+            "fat": 15
+          }
+        },
+        {
+          "name": "Dessert",
+          "macro": {
+            "calories": 200,
+            "carbohydrates": 30,
+            "protein": 5,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Supper",
+          "macro": {
+            "calories": 400,
+            "carbohydrates": 60,
+            "protein": 20,
+            "fat": 15
+          }
+        }
+      ]
+    },
+    {
+      "date": "2023-10-07",
+      "meals": [
+        {
+          "name": "Breakfast",
+          "macro": {
+            "calories": 300,
+            "carbohydrates": 50,
+            "protein": 20,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Lunch",
+          "macro": {
+            "calories": 600,
+            "carbohydrates": 80,
+            "protein": 30,
+            "fat": 20
+          }
+        },
+        {
+          "name": "Dinner",
+          "macro": {
+            "calories": 500,
+            "carbohydrates": 70,
+            "protein": 25,
+            "fat": 15
+          }
+        },
+        {
+          "name": "Dessert",
+          "macro": {
+            "calories": 200,
+            "carbohydrates": 30,
+            "protein": 5,
+            "fat": 10
+          }
+        },
+        {
+          "name": "Supper",
+          "macro": {
+            "calories": 400,
+            "carbohydrates": 60,
+            "protein": 20,
+            "fat": 15
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,18 +1,17 @@
 import React from 'react';
-import {StyledSingleColumnGridTemplate} from './SingleRowGridTemplate.styles';
-import {Css, DefaultCss} from "../../../GlobalStyle";
+import {SingleRowGridTemplateStyles} from './SingleRowGridTemplate.styles';
+import {Css, getDefaultCss} from "../../../GlobalStyle";
 
 export type SingleRowGridTemplateProps = {
     css?: Css
     children?: React.ReactNode;
 };
 
-const SingleRowGridTemplate: React.FC<SingleRowGridTemplateProps> = ({children, css = DefaultCss}) => {
-
+const SingleRowGridTemplate: React.FC<SingleRowGridTemplateProps> = ({children, css = getDefaultCss()}) => {
     return (
-        <StyledSingleColumnGridTemplate {...css}>
+        <SingleRowGridTemplateStyles {...css}>
             {children}
-        </StyledSingleColumnGridTemplate>
+        </SingleRowGridTemplateStyles>
     );
 };
 
