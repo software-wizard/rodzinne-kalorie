@@ -3,11 +3,11 @@ import {CssAttrs} from "../../../GlobalStyle";
 
 export const StyledSingleColumnGridTemplate = styled.div<CssAttrs>`
     display: grid;
-    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    height: 100%;
     
     justify-items: center;
     justify-content: center;
-    align-items: self-end;
     
     row-gap: ${({rowGap}) => rowGap};
 `;
