@@ -11,6 +11,7 @@ export default {
 const Template: StoryFn<ScheduleTableProps> = (args) => <ScheduleTable {...args} />;
 
 export const DEFAULT = Template.bind({});
+// @ts-ignore
 DEFAULT.args = {
     schedule: scheduleData
 };

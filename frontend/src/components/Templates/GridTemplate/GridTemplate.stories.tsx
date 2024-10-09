@@ -3,7 +3,7 @@ import {StoryFn, Meta} from '@storybook/react';
 import GridTemplate, {GridTemplateProps} from './GridTemplate';
 
 export default {
-    title: 'Components/nowy/GridTemplate',
+    title: 'Components/templates/GridTemplate',
     component: GridTemplate,
 } as Meta;
 

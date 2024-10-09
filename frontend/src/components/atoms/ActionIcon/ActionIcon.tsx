@@ -4,12 +4,17 @@ import {IconType} from "react-icons";
 
 export type ActionIconProps = {
     icon: IconType
+    onClick: () => void
 };
 
-const ActionIcon: React.FC<ActionIconProps> = ({icon: Icon}) => {
-
+const ActionIcon: React.FC<ActionIconProps> = ({
+                                                   icon: Icon,
+                                                   onClick = () => {
+                                                       alert('icon clicked');
+                                                   }
+                                               }) => {
     return (
-        <StyledActionIcon>
+        <StyledActionIcon onClick={onClick}>
             <Icon/>
         </StyledActionIcon>
     );

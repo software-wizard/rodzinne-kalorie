@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyledSingleColumnGridTemplate} from './SingleColumnGridTemplate.styles';
-import {Css, getDefaultCss} from "../../../GlobalStyle";
+import {CssAttrs, getDefaultCss} from "../../../GlobalStyle";
 
 export type ColumnTemplateProps = {
-    css?: Css
+    css?: CssAttrs
     children?: React.ReactNode;
 };
 

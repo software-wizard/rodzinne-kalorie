@@ -1,9 +1,9 @@
 import React from 'react';
 import {SingleRowGridTemplateStyles} from './SingleRowGridTemplate.styles';
-import {Css, getDefaultCss} from "../../../GlobalStyle";
+import {CssAttrs, getDefaultCss} from "../../../GlobalStyle";
 
 export type SingleRowGridTemplateProps = {
-    css?: Css
+    css?: CssAttrs
     children?: React.ReactNode;
 };
 

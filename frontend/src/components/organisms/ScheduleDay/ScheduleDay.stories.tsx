@@ -1,6 +1,6 @@
 import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
-import ScheduleDay, { ScheduleDayProps } from './ScheduleDay';
+import {Meta, StoryFn} from '@storybook/react';
+import ScheduleDay, {ScheduleDayProps} from './ScheduleDay';
 import scheduleData from '../../../mocks/schedule.json';
 
 export default {
@@ -8,7 +8,11 @@ export default {
     component: ScheduleDay,
 } as Meta;
 
-const Template: StoryFn<ScheduleDayProps> = (args) => <ScheduleDay {...args} />;
+const Template: StoryFn<ScheduleDayProps> = (args) =>
+
+    <div style={{width: '200px', height: '80vh', display: 'grid'}}>
+        <ScheduleDay {...args}/>
+    </div>
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {

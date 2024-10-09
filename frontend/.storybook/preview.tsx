@@ -35,11 +35,11 @@ const withHeaderAndFooter: Decorator = (Story) => (
     }}>
         <AppHeader/>
         <div style={{display: 'flex', flexDirection: 'column', height: '85vh'}}>
-            <div style={{flex: 1, overflow: 'auto'}}>
-                <Story/>
-            </div>
+            {/*<div style={{flex: 1, overflow: 'auto'}}>*/}
+            <Story/>
+            {/*</div>*/}
         </div>
-        <Placeholder name={'FOOTER'} height={'5vh'}/>
+        <Placeholder withSize={false} name={'FOOTER'} height={'5vh'}/>
     </div>
 );
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import {Css} from "../../../GlobalStyle";
+import {CssAttrs} from "../../../GlobalStyle";
 
-export const StyledSingleColumnGridTemplate = styled.div<Css>`
+export const StyledSingleColumnGridTemplate = styled.div<CssAttrs>`
     display: grid;
     grid-template-columns: 1fr;
     

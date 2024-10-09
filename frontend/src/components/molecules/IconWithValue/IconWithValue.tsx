@@ -1,10 +1,10 @@
 import React from 'react';
-import {Css, getDefaultCss, Size} from "../../../GlobalStyle";
+import {CssAttrs, getDefaultCss, Size} from "../../../GlobalStyle";
 import Label from "../../atoms/Label/Label";
 import SingleColumnGridTemplate from "../../Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
 
 export type IconWithValueProps = {
-    css?: Css
+    css?: CssAttrs
     label: string;
     value: string;
     size?: Size

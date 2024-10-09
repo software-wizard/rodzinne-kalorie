@@ -1,6 +1,6 @@
 import {createGlobalStyle} from 'styled-components';
 
-export type Css = {
+export type CssAttrs = {
     width?: string;
     height?: string;
     padding?: string;
