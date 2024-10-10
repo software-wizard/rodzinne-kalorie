@@ -23,5 +23,11 @@ export const StyledButton = styled.button`
         transform: translateY(3px) translateX(1px);
         box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
     }
+
+    &.active {
+        background-color: ${COLOR_GREEN.color200};
+        color: ${COLOR_GREEN.color900};
+    }
+    
 `;
 export default StyledButton;
