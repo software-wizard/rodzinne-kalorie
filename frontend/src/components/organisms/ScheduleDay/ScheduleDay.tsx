@@ -2,7 +2,7 @@ import React from 'react';
 import SingleColumnGridTemplate from "../../Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
 import Label from "../../atoms/Label/Label";
 import MealCard from "../MealCard/MealCard";
-import {MealDto} from "../../../date/Meal";
+import {MealDto} from "../../../data/Meal";
 import {getDefaultCss} from "../../../GlobalStyle";
 
 export type ScheduleDayProps = {

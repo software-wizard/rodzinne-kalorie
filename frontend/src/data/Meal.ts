@@ -2,8 +2,8 @@ export interface ScheduleDto{
     days: Array<DayDto>;
 }
 
-interface DayDto {
-    date: Date;
+export interface DayDto {
+    date: Date | string
     meals: Array<MealDto>;
 }
 export interface MealDto {

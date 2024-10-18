@@ -1,14 +1,20 @@
 import React from 'react';
-import {StyledSchedulePage} from './SchedulePage.styles';
+import SingleColumnGridTemplate from "../Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
+import ActiveMemberButtonBar from "../organisms/ActiveMemberButtonBar/ActiveMemberButtonBar";
+import ScheduleTable from "../organisms/ScheduleTable/ScheduleTable";
+import {appStore} from '../../store/AppStore';
+
 
 export type SchedulePageProps = {};
 
 const SchedulePage: React.FC<SchedulePageProps> = ({}) => {
+    const schedule = appStore((state) => state.activeMember.schedule);
 
     return (
-        <StyledSchedulePage>
-            <p>SchedulePage</p>
-        </StyledSchedulePage>
+        <SingleColumnGridTemplate>
+            <ActiveMemberButtonBar userNames={["a", "b"]} activeName={"a"}/>
+            <ScheduleTable schedule={schedule}></ScheduleTable>
+        </SingleColumnGridTemplate>
     );
 };
 

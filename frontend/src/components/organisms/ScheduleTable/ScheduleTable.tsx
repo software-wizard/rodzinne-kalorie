@@ -1,6 +1,6 @@
 import React from 'react';
 import SingleRowGridTemplate from "../../Templates/SingleRowGridTemplate/SingleRowGridTemplate";
-import {ScheduleDto} from "../../../date/Meal";
+import {ScheduleDto} from "../../../data/Meal";
 import ScheduleDay from "../ScheduleDay/ScheduleDay";
 import {getDefaultCss} from "../../../GlobalStyle";
 
