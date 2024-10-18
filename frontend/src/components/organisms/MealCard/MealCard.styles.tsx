@@ -5,8 +5,9 @@ export const Card = styled.div`
     width: 100%;
     border-radius: 0.8rem;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.2);
-    padding: 5px;
+    padding: 0.7rem;
     display: grid;
+    grid-template-rows: 2fr 1fr;
     position: relative;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;

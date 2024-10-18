@@ -16,7 +16,7 @@ const ScheduleDay: React.FC<ScheduleDayProps> = ({date, meals}) => {
     css.rowGap = '10px';
 
     return (
-        <SingleColumnGridTemplate css = {css}>
+        <SingleColumnGridTemplate headerSize={'2rem'} css = {css}>
             <Label text={date.toLocaleDateString()}></Label>
             {meals.map((meal, index) => (
                 <MealCard key={index} mealName={meal.name} macro={meal.macro}></MealCard>

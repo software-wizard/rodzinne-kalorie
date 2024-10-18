@@ -11,7 +11,7 @@ const SchedulePage: React.FC<SchedulePageProps> = ({}) => {
     const schedule = appStore((state) => state.activeMember.schedule);
 
     return (
-        <SingleColumnGridTemplate>
+        <SingleColumnGridTemplate headerSize={'3rem'}>
             <ActiveMemberButtonBar userNames={["a", "b"]} activeName={"a"}/>
             <ScheduleTable schedule={schedule}></ScheduleTable>
         </SingleColumnGridTemplate>

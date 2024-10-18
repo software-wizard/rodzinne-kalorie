@@ -5,11 +5,12 @@ import {CssAttrs, getDefaultCss} from "../../../GlobalStyle";
 export type ColumnTemplateProps = {
     css?: CssAttrs
     children?: React.ReactNode;
+    headerSize?: string;
 };
 
-const SingleColumnGridTemplate: React.FC<ColumnTemplateProps> = ({children, css = getDefaultCss()}) => {
+const SingleColumnGridTemplate: React.FC<ColumnTemplateProps> = ({children, css = getDefaultCss(), headerSize}) => {
     return (
-        <StyledSingleColumnGridTemplate {...css}>
+        <StyledSingleColumnGridTemplate headerSize = {headerSize} frRowAmount={React.Children.count(children)} {...css}>
             {children}
         </StyledSingleColumnGridTemplate>
     );
