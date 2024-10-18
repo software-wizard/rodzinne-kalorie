@@ -10,14 +10,14 @@ interface MemberState {
 }
 
 
-export const appStore = create<MemberState>((set) => {
+export const useStore = create<MemberState>((set) => {
     const members = getMembers();
     return {
         members: members,
         activeMember: members[0],
         setActiveMember: (memberName) => set((state) => {
             const member = state.members.find(m => m.name === memberName);
-            return { activeMember: member };
+            return { activeMember: member || state.activeMember };
         }),
     };
 });
