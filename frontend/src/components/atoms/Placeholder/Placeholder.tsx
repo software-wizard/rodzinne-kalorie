@@ -7,6 +7,7 @@ export type PlaceholderProps = {
     name?: string;
     children?: React.ReactNode;
     withSize?: boolean
+    padding?: string
 };
 
 const Placeholder: React.FC<PlaceholderProps> = ({
@@ -43,8 +44,8 @@ const Placeholder: React.FC<PlaceholderProps> = ({
                     <p>{name}</p>
                     {withSize && (
                         <React.Fragment>
-                            <p>Defined: {width} x {height}</p>
-                            <p>Real: {realDimensions.width}px x {realDimensions.height}px</p>
+                            <p>D: {width} x {height}</p>
+                            <p>R: {realDimensions.width}px x {realDimensions.height}px</p>
                         </React.Fragment>
                     )}
                 </React.Fragment>

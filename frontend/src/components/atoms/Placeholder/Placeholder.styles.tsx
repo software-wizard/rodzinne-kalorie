@@ -5,6 +5,7 @@ import {COLOR_GREEN, COLOR_GREY} from "../../../GlobalStyle";
 export const StyledPlaceholder = styled.div<PlaceholderProps>`
     width: ${p => p.width};
     height: ${p => p.height};
+    padding: ${p => p.padding};
 
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@ export const StyledPlaceholder = styled.div<PlaceholderProps>`
     & > div > p,
     & > p {
         color: ${COLOR_GREEN.color1000};
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         font-weight: bold;
         margin: 0
     }

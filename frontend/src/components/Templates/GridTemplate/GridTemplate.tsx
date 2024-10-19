@@ -13,6 +13,8 @@ export type GridTemplateProps = {
     alignItems?: string;
     justifyContent?: string;
     alignContent?: string;
+    overflowY?: string;
+    border?: string;
 
     children: React.ReactNode;
 };
