@@ -8,7 +8,6 @@ export type MealListPageProps = {};
 const MealListPage: React.FC<MealListPageProps> = ({}) => {
 
     return (
-
         <GridTemplate direction={"column"} gridTemplateColumns={'1fr 5fr'} gap={'0.5em'}>
             <Placeholder name={'szukajka'}></Placeholder>
             <GridTemplate overflowY={'scroll'} gap={'0.5em'}>

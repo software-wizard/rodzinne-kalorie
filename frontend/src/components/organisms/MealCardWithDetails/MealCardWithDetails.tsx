@@ -11,6 +11,7 @@ const MealCardWithDetails: React.FC<MealCardWithDetailsProps> = ({}) => {
                 <Placeholder name={'foto'} width={'200px'} height={'200px'}></Placeholder>
                 <Placeholder name={'jakieś info'}></Placeholder>
                 <Placeholder name={'składniki'}></Placeholder>
+                <Placeholder name={'makro'}></Placeholder>
                 <Placeholder name={'chart'} width={'160px'} height={'160px'} ></Placeholder>
         </GridTemplate>
     );
