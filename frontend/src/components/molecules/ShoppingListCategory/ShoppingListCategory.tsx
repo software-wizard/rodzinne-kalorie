@@ -14,7 +14,9 @@ const ShoppingListCategory: React.FC<ShoppingListCategoryProps> = ({name, produc
     return (
         <SingleColumnGridTemplate headerSize={'2rem'}>
             <Label text={name} size={Size.L}></Label>
-            {products.map(p => <Checkbox label={p}></Checkbox>)}
+            <div>
+                {products.map(p => <Checkbox label={p}></Checkbox>)}
+            </div>
         </SingleColumnGridTemplate>
     );
 };

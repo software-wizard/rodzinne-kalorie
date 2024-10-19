@@ -1,7 +1,7 @@
 import React from 'react';
-import SingleColumnGridTemplate from "../Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
-import ActiveMemberButtonBar from "../organisms/ActiveMemberButtonBar/ActiveMemberButtonBar";
-import ScheduleTable from "../organisms/ScheduleTable/ScheduleTable";
+import SingleColumnGridTemplate from "../../components/Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
+import ActiveMemberButtonBar from "../../components/organisms/ActiveMemberButtonBar/ActiveMemberButtonBar";
+import ScheduleTable from "../../components/organisms/ScheduleTable/ScheduleTable";
 import {useStore} from '../../store/Store';
 
 export type SchedulePageProps = {};
