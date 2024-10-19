@@ -1,0 +1,14 @@
+.flex{
+    display:flex;
+    padding: 5px;
+    gap: 1px;
+}
+
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.p{
+    font-size: 0.9rem;
+}
