@@ -8,13 +8,11 @@ export const StyledSingleColumnGridTemplate = styled.div<CssAttrs & { frRowAmoun
     grid-template-rows: ${({
                                headerSize,
                                frRowAmount
-                           }) => headerSize == undefined ? '1fr' : `${headerSize} repeat(${frRowAmount - 1}, 1fr)`};
+                           }) => headerSize === undefined ? '1fr' : `${headerSize} repeat(${frRowAmount - 1}, 1fr)`};
     height: 100%;
     width: 100%;
 
-    justify-items: center;
-    justify-content: stretch;
-
-    row-gap: ${({rowGap}) => rowGap};
+    justify-items: stretch;
+    justify-content: center;
 `;
 export default StyledSingleColumnGridTemplate;
