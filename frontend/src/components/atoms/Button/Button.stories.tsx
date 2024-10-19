@@ -1,26 +1,33 @@
 import React from 'react';
 import {Meta, StoryFn} from '@storybook/react';
 import Button, {ButtonProps} from './Button';
+import {IconType} from "react-icons";
+import {FaTree} from "react-icons/fa";
+import {FaYoutube} from "react-icons/fa6";
 
 export default {
     title: 'Components/atoms/Button',
     component: Button,
 } as Meta;
 
-const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
+const Template: StoryFn<ButtonProps> = (args) =>
+    <div style={{width: '300px', height: '50px'}}>
+        <Button {...args} />
+    </div>
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {
-    onClick: () => {alert('Button clicked')},
+    onClick: () => {
+        alert('Button clicked')
+    },
     children: 'Button'
 };
 
-const TemplateWithDivWrapper: StoryFn<ButtonProps> = (args) =>
-    <div style={{ width: '300px', height: '150px', border: '1px solid black' }}>
-        <Button {...args} />
-    </div>
-export const WITH_DIV_WRAPPER = TemplateWithDivWrapper.bind({});
-WITH_DIV_WRAPPER.args = {
-    onClick: () => {alert('Button clicked')},
-    children: 'Button'
+export const WITH_ICON = Template.bind({});
+WITH_ICON.args = {
+    onClick: () => {
+        alert('Button clicked')
+    },
+    children: 'Button with icon',
+    icon: FaYoutube
 };

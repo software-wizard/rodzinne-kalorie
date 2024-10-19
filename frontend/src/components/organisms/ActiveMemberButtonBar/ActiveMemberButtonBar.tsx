@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import SingleRowGridTemplate from "../../Templates/SingleRowGridTemplate/SingleRowGridTemplate";
 import Button from "../../atoms/Button/Button";
+import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
 
 export type ActiveMemberButtonBarProps = {
     userNames: Array<string>,
@@ -18,7 +18,7 @@ const ActiveMemberButtonBar: React.FC<ActiveMemberButtonBarProps> = ({userNames,
     }
 
     return (
-        <SingleRowGridTemplate>
+        <GridTemplate direction={'column'}>
             {userNames.map((userName) => (
                 <Button onClick={() => setCurrentUser(userName)}
                         className={activeName === userName ? 'active' : ''}
@@ -26,7 +26,7 @@ const ActiveMemberButtonBar: React.FC<ActiveMemberButtonBarProps> = ({userNames,
                     {userName}
                 </Button>
             ))}
-        </SingleRowGridTemplate>
+        </GridTemplate>
     );
 
 };

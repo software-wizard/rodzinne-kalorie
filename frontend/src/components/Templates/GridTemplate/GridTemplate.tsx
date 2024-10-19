@@ -1,20 +1,26 @@
 import React from 'react';
 import {StyledGridTemplate} from './GridTemplate.styles';
-import {CssAttrs, getDefaultCss} from "../../../GlobalStyle";
 
 export type GridTemplateProps = {
-    rows: number;
-    columns: number;
-    css?: CssAttrs
-    children?: React.ReactNode;
+    direction?: 'row' | 'column';
+    width?: string;
+    height?: string;
+    gap?: string;
+    gridTemplateRows?: string;
+    gridTemplateColumns?: string;
+    headerHeight?: string;
+    justifyItems?: string;
+    alignItems?: string;
+    justifyContent?: string;
+    alignContent?: string;
+
+    children: React.ReactNode;
 };
-const GridTemplate: React.FC<GridTemplateProps> = ({children, rows, columns}) => {
-    let css = getDefaultCss();
-    css.rows = rows;
-    css.columns = columns;
+
+const GridTemplate: React.FC<GridTemplateProps> = ({...props}) => {
     return (
-        <StyledGridTemplate {...css}>
-            {children}
+        <StyledGridTemplate{...props}>
+            {props.children}
         </StyledGridTemplate>
     );
 };

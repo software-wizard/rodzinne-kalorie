@@ -1,23 +1,21 @@
 import React from 'react';
-import {CssAttrs, getDefaultCss, Size} from "../../../GlobalStyle";
 import Label from "../../atoms/Label/Label";
-import SingleColumnGridTemplate from "../../Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
+import {Size} from "../../../GlobalStyle";
+import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
 
 export type IconWithValueProps = {
-    css?: CssAttrs
     label: string;
     value: string;
     size?: Size
 };
 
-const IconWithValue: React.FC<IconWithValueProps> = ({css = getDefaultCss(), label, value, size = Size.M,}) => {
-    css.alignContent = 'center'
-    css.rowGap = '3px'
+const IconWithValue: React.FC<IconWithValueProps> = ({label, value, size = Size.M,}) => {
+    // css.alignContent = 'center'
     return (
-        <SingleColumnGridTemplate css={css}>
+        <GridTemplate rows={2}>
             <Label text={label} size={size}/>
             <Label text={value} size={size}/>
-        </SingleColumnGridTemplate>
+        </GridTemplate>
     );
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import SingleColumnGridTemplate from "../../components/Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
 import ActiveMemberButtonBar from "../../components/organisms/ActiveMemberButtonBar/ActiveMemberButtonBar";
 import ScheduleTable from "../../components/organisms/ScheduleTable/ScheduleTable";
 import {useStore} from '../../store/Store';
+import GridTemplate from "../../components/Templates/GridTemplate/GridTemplate";
 
 export type SchedulePageProps = {};
 
@@ -13,11 +13,11 @@ const SchedulePage: React.FC<SchedulePageProps> = ({}) => {
     const setCurrentUser = useStore((state) => state.setActiveMember);
 
     return (
-        <SingleColumnGridTemplate headerSize={'3rem'}>
+        <GridTemplate>
             <ActiveMemberButtonBar userNames={members.map(m => m.name)} activeName={activeName}
                                    onClick={setCurrentUser}/>
             <ScheduleTable schedule={schedule}/>
-        </SingleColumnGridTemplate>
+        </GridTemplate>
     );
 };
 

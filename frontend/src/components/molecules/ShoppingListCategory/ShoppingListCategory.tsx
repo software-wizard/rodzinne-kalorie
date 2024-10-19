@@ -1,8 +1,8 @@
 import React from 'react';
-import SingleColumnGridTemplate from "../../Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
 import Label from "../../atoms/Label/Label";
 import Checkbox from "../../atoms/Checkbox/Checkbox";
 import {Size} from "../../../GlobalStyle";
+import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
 
 export type ShoppingListCategoryProps = {
     name: string;
@@ -12,12 +12,12 @@ export type ShoppingListCategoryProps = {
 const ShoppingListCategory: React.FC<ShoppingListCategoryProps> = ({name, products}) => {
 
     return (
-        <SingleColumnGridTemplate headerSize={'2rem'}>
-            <Label text={name} size={Size.L}></Label>
+        <GridTemplate>
             <div>
-                {products.map(p => <Checkbox label={p}></Checkbox>)}
+                <Label text={name} size={Size.L}></Label>
+                    {products.map(p => <Checkbox label={p}></Checkbox>)}
             </div>
-        </SingleColumnGridTemplate>
+        </GridTemplate>
     );
 };
 

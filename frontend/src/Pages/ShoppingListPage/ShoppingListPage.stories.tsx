@@ -3,7 +3,7 @@ import {Meta, StoryFn} from '@storybook/react';
 import ShoppingListPage, {ShoppingListPageProps} from './ShoppingListPage';
 
 export default {
-    title: 'Components/nowy/ShoppingListPage',
+    title: 'Components/Pages/ShoppingListPage',
     component: ShoppingListPage,
 } as Meta;
 

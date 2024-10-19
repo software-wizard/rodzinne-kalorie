@@ -19,7 +19,7 @@ export type MealCardProps = {
 const MealCard: React.FC<MealCardProps> = ({mealName = 'nazwa posiłku', macro}) => {
     return (
         <Card>
-            <VisibleByHoverWrapper rows={2} columns={3}>
+            <VisibleByHoverWrapper>
                 <ActionIcon icon={FaReply}></ActionIcon>
                 <ActionIcon icon={FaSearch}></ActionIcon>
                 <ActionIcon icon={FaRegFile}></ActionIcon>

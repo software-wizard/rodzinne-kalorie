@@ -1,40 +1,5 @@
 import {createGlobalStyle} from 'styled-components';
 
-export type CssAttrs = {
-    width?: string;
-    height?: string;
-    padding?: string;
-    margin?: string;
-
-    rows: number;
-    columns: number;
-    columnGap?: string;
-    rowGap?: string;
-    alignContent?: string;
-    justifyContent?: string;
-    alignItems?: string;
-    justifyItems?: string;
-}
-
-export function getDefaultCss()
-{
-    return {
-        width: '100%',
-        height: '100%',
-        padding: '0px',
-        margin: '0px',
-
-        rows: 1,
-        columns: 1,
-        columnGap: '0',
-        rowGap: '0',
-        alignContent: 'stretch',
-        justifyContent: 'stretch',
-        alignItems: 'stretch',
-        justifyItems: 'stretch'
-    }
-}
-
 
 export const PRIMARY = "#4CAF50";
 export const DARK_PRIMARY = "#388E3C";

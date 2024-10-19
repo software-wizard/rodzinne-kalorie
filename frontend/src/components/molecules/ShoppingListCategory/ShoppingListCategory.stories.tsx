@@ -1,13 +1,17 @@
 import React from 'react';
-import {StoryFn, Meta} from '@storybook/react';
+import {Meta, StoryFn} from '@storybook/react';
 import ShoppingListCategory, {ShoppingListCategoryProps} from './ShoppingListCategory';
 
 export default {
-    title: 'Components/nowy/ShoppingListCategory',
+    title: 'Components/molecules/ShoppingListCategory',
     component: ShoppingListCategory,
 } as Meta;
 
-const Template: StoryFn<ShoppingListCategoryProps> = (args) => <ShoppingListCategory {...args} />;
+const Template: StoryFn<ShoppingListCategoryProps> = (args) =>
+    <div>
+        <ShoppingListCategory {...args} />
+    </div>
+;
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {

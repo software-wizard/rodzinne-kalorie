@@ -3,7 +3,7 @@ import {StoryFn, Meta} from '@storybook/react';
 import SchedulePage, {SchedulePageProps} from './SchedulePage';
 
 export default {
-    title: 'Components/nowy/SchedulePage',
+    title: 'Components/Pages/SchedulePage',
     component: SchedulePage,
 } as Meta;
 

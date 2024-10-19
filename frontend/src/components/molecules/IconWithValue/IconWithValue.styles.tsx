@@ -16,8 +16,10 @@ export const StyledLabel = styled.p<IconWithValueProps>`
       font-size: 0.8rem;
       font-weight: normal;
     `;
-            case Size.M:
-                return getDefaultSize();
+                return `
+          font-size: 1.2rem;
+          font-weight: bold;
+        `;
             case Size.L:
                 return `
       font-size: 1.4rem;
@@ -29,18 +31,14 @@ export const StyledLabel = styled.p<IconWithValueProps>`
       font-weight: bold;
     `;
             default:
-                getDefaultSize();
+                return `
+          font-size: 1.2rem;
+          font-weight: bold;
+        `;
         }
     }}
     color: ${COLOR_GREEN.color1000};
 `;
 
-
-function getDefaultSize() {
-    return `
-          font-size: 1.2rem;
-          font-weight: bold;
-        `;
-}
 
 export default StyledLabel;

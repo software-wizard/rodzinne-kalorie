@@ -1,24 +1,21 @@
 import React from 'react';
-import SingleRowGridTemplate from "../../Templates/SingleRowGridTemplate/SingleRowGridTemplate";
 import {ScheduleDto} from "../../../data/Meal";
 import ScheduleDay from "../ScheduleDay/ScheduleDay";
-import {getDefaultCss} from "../../../GlobalStyle";
+import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
 
 export type ScheduleTableProps = {
     schedule: ScheduleDto
 };
 
 const ScheduleTable: React.FC<ScheduleTableProps> = ({schedule}) => {
-    let css = getDefaultCss();
-    css.columnGap = '10px'
     return (
-        <SingleRowGridTemplate css = {css}>
+        <GridTemplate direction={'column'} gap = {'10px'}>
             {schedule.days.map((scheduleDayElement, index) => (
                 <ScheduleDay key={index} date={new Date(scheduleDayElement.date)}
                              meals={scheduleDayElement.meals}></ScheduleDay>
             ))}
 
-        </SingleRowGridTemplate>
+        </GridTemplate>
     );
 };
 

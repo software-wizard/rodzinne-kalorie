@@ -1,9 +1,9 @@
 import React from 'react';
-import SingleColumnGridTemplate from "../../Templates/SingleColumnGridTemplate/SingleColumnGridTemplate";
 import Label from "../../atoms/Label/Label";
 import MealCard from "../MealCard/MealCard";
 import {MealDto} from "../../../data/Meal";
-import {getDefaultCss} from "../../../GlobalStyle";
+import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
+import {Size} from "../../../GlobalStyle";
 
 export type ScheduleDayProps = {
     date: Date
@@ -12,16 +12,13 @@ export type ScheduleDayProps = {
 
 const ScheduleDay: React.FC<ScheduleDayProps> = ({date, meals}) => {
 
-    let css = getDefaultCss();
-    css.rowGap = '10px';
-
     return (
-        <SingleColumnGridTemplate headerSize={'2rem'} css = {css}>
-            <Label text={date.toLocaleDateString()}></Label>
+        <GridTemplate justifyItems={'center'}>
+            <Label size={Size.L} text={date.toLocaleDateString()}></Label>
             {meals.map((meal, index) => (
                 <MealCard key={index} mealName={meal.name} macro={meal.macro}></MealCard>
             ))}
-        </SingleColumnGridTemplate>
+        </GridTemplate>
     );
 };
 
