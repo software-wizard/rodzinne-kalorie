@@ -13,7 +13,7 @@ const SchedulePage: React.FC<SchedulePageProps> = ({}) => {
     const setCurrentUser = useStore((state) => state.setActiveMember);
 
     return (
-        <GridTemplate>
+        <GridTemplate headerHeight={'3rem'}>
             <ActiveMemberButtonBar userNames={members.map(m => m.name)} activeName={activeName}
                                    onClick={setCurrentUser}/>
             <ScheduleTable schedule={schedule}/>

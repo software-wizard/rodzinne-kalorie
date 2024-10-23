@@ -42,6 +42,11 @@ export const StyledLabel = styled.p<LabelProps>`
         }
     }}
     color: ${COLOR_GREEN.color1000};
+    background-color: ${({backgroundColor}) => backgroundColor ? backgroundColor : 'transparent'};
+    tutaj trzeba ogarnąć odpowiednio kolorowanie - pewnie owrapować w div. Label nie powinien być 100%
+    display: flex;
+    width: 100%;
+    height: 100%;
 `;
 
 export default StyledLabel;

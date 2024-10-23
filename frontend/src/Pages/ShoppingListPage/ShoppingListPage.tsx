@@ -13,7 +13,7 @@ const ShoppingListPage: React.FC<ShoppingListPageProps> = ({list}) => {
 
     return (
         <div style={{overflowY: 'scroll'}}>
-            <GridTemplate gridTemplateRows={'repeat(3,1fr)'}>
+            <GridTemplate gridTemplateColumns={'repeat(5,1fr)'}>
                 {list.map(l => <ShoppingListCategory key={l.name} name={l.name} products={l.products}/>)}
             </GridTemplate>
         </div>

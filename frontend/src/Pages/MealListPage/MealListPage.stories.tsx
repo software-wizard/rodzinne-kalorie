@@ -3,7 +3,7 @@ import {StoryFn, Meta} from '@storybook/react';
 import MealListPage, {MealListPageProps} from './MealListPage';
 
 export default {
-    title: 'Components/nowy/MealListPage',
+    title: 'components/pages/MealListPage',
     component: MealListPage,
 } as Meta;
 

@@ -25,7 +25,7 @@ export const useStore = create<MemberState>((set) => {
 //================================================
 function getMembers() {
     return [
-        {name: 'Przemek', schedule: schedule},
-        {name: 'Kasia', schedule: {days: []}}
+        {name: 'Przemek', schedule: schedule, calorificRequirement: 2800},
+        {name: 'Kasia', schedule: {days: []}, calorificRequirement: 2000}
     ];
 }

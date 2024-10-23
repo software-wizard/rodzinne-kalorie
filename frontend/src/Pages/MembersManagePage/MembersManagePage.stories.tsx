@@ -3,7 +3,7 @@ import {StoryFn, Meta} from '@storybook/react';
 import MembersManagePage, {MembersManagePageProps} from './MembersManagePage';
 
 export default {
-    title: 'Components/nowy/MembersManagePage',
+    title: 'components/pages/MembersManagePage',
     component: MembersManagePage,
 } as Meta;
 

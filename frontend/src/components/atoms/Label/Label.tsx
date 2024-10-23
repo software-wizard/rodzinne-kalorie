@@ -5,12 +5,13 @@ import {Size} from "../../../GlobalStyle";
 export type LabelProps = {
     text?: string;
     size?: Size
+    backgroundColor?: string;
 };
 
-const Label: React.FC<LabelProps> = ({ text = 'some text', size = Size.M }) => {
+const Label: React.FC<LabelProps> = ({...props}) => {
     return (
-        <StyledLabel size={size}>
-            {text}
+        <StyledLabel size={props.size} backgroundColor={props.backgroundColor}>
+            {props.text}
         </StyledLabel>
     );
 };

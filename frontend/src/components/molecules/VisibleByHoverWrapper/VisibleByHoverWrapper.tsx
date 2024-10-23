@@ -12,7 +12,7 @@ const VisibleByHoverWrapper: React.FC<VisibleByHoverWrapperProps> = ({children, 
 
     return (
         <ActionIconsContainer className="action-icons">
-            <GridTemplate gridTemplateRows={'repeat(3, 1fr)'} gap={'0.7rem'}>
+            <GridTemplate direction={'column'} gridTemplateRows={'repeat(2, 1fr)'} gap={'0.5rem'}>
                 {children}
             </GridTemplate>
         </ActionIconsContainer>

@@ -12,10 +12,10 @@ export type ShoppingListCategoryProps = {
 const ShoppingListCategory: React.FC<ShoppingListCategoryProps> = ({name, products}) => {
 
     return (
-        <GridTemplate>
+        <GridTemplate headerHeight={'2rem'}>
+            <Label text={name} size={Size.L}></Label>
             <div>
-                <Label text={name} size={Size.L}></Label>
-                    {products.map(p => <Checkbox label={p}></Checkbox>)}
+                {products.map(p => <Checkbox label={p}></Checkbox>)}
             </div>
         </GridTemplate>
     );
