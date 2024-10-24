@@ -12,5 +12,5 @@ const Template: StoryFn<CheckboxProps> = (args) => <Checkbox {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    label: 'Checkbox Label',
+    label: 'Checkbox MultiRangeInput',
 };

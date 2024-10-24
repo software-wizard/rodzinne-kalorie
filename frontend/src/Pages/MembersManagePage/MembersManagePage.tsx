@@ -1,10 +1,10 @@
 import React from 'react';
 import GridTemplate from "../../components/Templates/GridTemplate/GridTemplate";
 import ActiveMemberButtonBar from "../../components/organisms/ActiveMemberButtonBar/ActiveMemberButtonBar";
-import {Size} from "../../GlobalStyle";
 import {useStore} from "../../store/Store";
 import Placeholder from "../../components/atoms/Placeholder/Placeholder";
-import IconWithValue from "../../components/molecules/IconWithValue/IconWithValue";
+import Label from "../../components/atoms/Label/Label";
+import {Size} from "../../GlobalStyle";
 
 export type MembersManagePageProps = {};
 
@@ -20,8 +20,8 @@ const MembersManagePage: React.FC<MembersManagePageProps> = ({}) => {
                                    onClick={setCurrentUser}/>
             <GridTemplate direction={'column'}>
                 <GridTemplate headerHeight={'3rem'}>
-                    <IconWithValue direction='column' label={'Zapotrzebowanie kaloryczne'} value={calorificRequirements.toString()}
-                                   size={Size.L}/>
+                    <Label size={Size.L}
+                           text={'Zapotrzebowanie kaloryczne: ' + calorificRequirements.toString()}></Label>
                     <Placeholder name={'tabela makro'}></Placeholder>
                     <Placeholder name={'tabela makro per posiłek'}></Placeholder>
                 </GridTemplate>

@@ -11,7 +11,7 @@ const Template: StoryFn<typeof VisibleByHoverWrapper> = (args) => <VisibleByHove
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {
-    children: '<Label>You see me now</Label>',
+    children: '<MultiRangeInput>You see me now</MultiRangeInput>',
     rows: 2,
     columns: 3
 };

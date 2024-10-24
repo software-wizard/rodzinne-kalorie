@@ -5,6 +5,14 @@ import {COLOR_GREEN, Size} from '../../../GlobalStyle';
 
 export const StyledLabel = styled.p<LabelProps>`
     ${({size}) => {
+        function defaultSize() {
+            return `
+      font-size: 1.2rem;
+      height: 1.2rem;
+      font-weight: bold;
+        `;
+        }
+
         switch (size) {
             case Size.XS:
                 return `
@@ -19,11 +27,7 @@ export const StyledLabel = styled.p<LabelProps>`
       font-weight: normal;
     `;
             case Size.M:
-                return `
-      font-size: 1.2rem;
-      height: 1.2rem;
-      font-weight: bold;
-        `;
+                return defaultSize();
             case Size.L:
                 return `
       font-size: 1.4rem;
@@ -37,16 +41,20 @@ export const StyledLabel = styled.p<LabelProps>`
       font-weight: bold;
     `;
             default: {
-                alert('something wrong with size in label')
+                defaultSize();
             }
         }
     }}
     color: ${COLOR_GREEN.color1000};
     background-color: ${({backgroundColor}) => backgroundColor ? backgroundColor : 'transparent'};
-    tutaj trzeba ogarnąć odpowiednio kolorowanie - pewnie owrapować w div. Label nie powinien być 100%
+    ${({backgroundColor}) => backgroundColor && backgroundColor !== 'transparent' ? `
     display: flex;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
+` : ''}
+
 `;
 
 export default StyledLabel;
