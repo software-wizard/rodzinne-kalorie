@@ -2,7 +2,7 @@ import React from 'react';
 import Label from "../../atoms/Label/Label";
 import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
 import {COLOR_GREEN, Size} from "../../../GlobalStyle";
-import CalorificRangeCalcRow from "../CalorificRangeCalcRow/CalorificRangeCalcRow";
+import CalorificRangeCalcRow from "../../molecules/CalorificRangeCalcRow/CalorificRangeCalcRow";
 
 export type CalorificManageTableProps = {
     dailyCalorific: number;
@@ -18,12 +18,12 @@ const CalorificManageTable: React.FC<CalorificManageTableProps> = (props) => {
                 <Label size={Size.L} backgroundColor={headerColor} text={'g'}></Label>
                 <Label size={Size.L} backgroundColor={headerColor} text={'kcalc'}></Label>
             </GridTemplate>
-            <CalorificRangeCalcRow dailyCalorific={props.dailyCalorific} macroType={'protein'} initialMinValue={25}
-                                   initialMaxValue={35}></CalorificRangeCalcRow>
-            <CalorificRangeCalcRow dailyCalorific={props.dailyCalorific} macroType={'carbs'} initialMinValue={35}
-                                   initialMaxValue={45}></CalorificRangeCalcRow>
-            <CalorificRangeCalcRow dailyCalorific={props.dailyCalorific} macroType={'fat'} initialMinValue={20}
-                                   initialMaxValue={30}></CalorificRangeCalcRow>
+            <CalorificRangeCalcRow dailyCalorific={props.dailyCalorific} macroType={'protein'} minValue={25}
+                                   maxValue={35}></CalorificRangeCalcRow>
+            <CalorificRangeCalcRow dailyCalorific={props.dailyCalorific} macroType={'carbs'} minValue={35}
+                                   maxValue={45}></CalorificRangeCalcRow>
+            <CalorificRangeCalcRow dailyCalorific={props.dailyCalorific} macroType={'fat'} minValue={20}
+                                   maxValue={30}></CalorificRangeCalcRow>
             <GridTemplate gap={'1rem'} gridTemplateColumns={"repeat(4,1fr)"}>
                 <Label backgroundColor={'x'}></Label>
                 <Label backgroundColor={headerColor}></Label>

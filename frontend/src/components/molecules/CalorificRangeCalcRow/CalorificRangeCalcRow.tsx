@@ -2,23 +2,23 @@ import React, {useEffect, useState} from 'react';
 import Label from "../../atoms/Label/Label";
 import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
 import {COLOR_GREEN, Size} from "../../../GlobalStyle";
-import MultiRangeInput from "../../molecules/MultiRangeInput/MultiRangeInput";
+import MultiRangeInput from "../MultiRangeInput/MultiRangeInput";
 
 export type CalorificRangeCalcRowProps = {
     dailyCalorific: number;
     macroType: 'protein' | 'carbs' | 'fat';
-    initialMinValue: number;
-    initialMaxValue: number;
+    minValue: number;
+    maxValue: number;
 };
 
 const CalorificRangeCalcRow: React.FC<CalorificRangeCalcRowProps> = (props) => {
     const headerColor = COLOR_GREEN.color100;
     const macroFactor = props.macroType === 'fat' ? 9 : 4;
 
-    const [rangeFromInput, setRangeFromInput] = useState({min: props.initialMinValue, max: props.initialMaxValue});
+    const [rangeFromInput, setRangeFromInput] = useState({min: props.minValue, max: props.maxValue});
     useEffect(() => {
-        setRangeFromInput({min: props.initialMinValue, max: props.initialMaxValue});
-    }, [props.initialMinValue, props.initialMaxValue]);
+        setRangeFromInput({min: props.minValue, max: props.maxValue});
+    }, [props.minValue, props.maxValue]);
 
     const handleRangeChange = (min: number, max: number) => {
         setRangeFromInput({min, max});
@@ -50,7 +50,7 @@ const CalorificRangeCalcRow: React.FC<CalorificRangeCalcRowProps> = (props) => {
     return (
         <GridTemplate gap={'1rem'} direction={'column'} gridTemplateColumns={"repeat(4,1fr)"}>
             <Label size={Size.L} backgroundColor={headerColor} text={getText()}></Label>
-            <MultiRangeInput initialMinValue={props.initialMinValue} initialMaxValue={props.initialMaxValue}
+            <MultiRangeInput initialMinValue={props.minValue} initialMaxValue={props.maxValue}
                              onChange={handleRangeChange} unit={'%'}/>
             <Label size={Size.L} backgroundColor={'x'} text={calculateGrams()}></Label>
             <Label size={Size.L} backgroundColor={'x'} text={calculateKcalc()}></Label>

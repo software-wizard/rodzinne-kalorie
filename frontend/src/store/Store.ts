@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import {Member} from '../data/Member';
+import {Member} from '../data/dtos/Member';
 import schedule from '../mocks/schedule.json';
 
 

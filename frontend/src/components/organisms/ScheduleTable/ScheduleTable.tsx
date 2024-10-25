@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScheduleDto} from "../../../data/Meal";
+import {ScheduleDto} from "../../../data/dtos/Meal";
 import ScheduleDay from "../ScheduleDay/ScheduleDay";
 import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
 

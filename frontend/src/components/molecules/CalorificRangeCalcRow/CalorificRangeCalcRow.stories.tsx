@@ -4,7 +4,7 @@ import CalorificManageTable from "./CalorificRangeCalcRow";
 import CalorificRangeCalcRow, {CalorificRangeCalcRowProps} from "./CalorificRangeCalcRow";
 
 export default {
-    title: 'Components/nowy/CalorificRangeCalcRow',
+    title: 'Components/molecules/CalorificRangeCalcRow',
     component: CalorificManageTable,
 } as Meta;
 
@@ -12,6 +12,8 @@ const Template: StoryFn<CalorificRangeCalcRowProps> = (args) => <CalorificRangeC
 
 export const DEFAULT = Template.bind({});
 DEFAULT.args = {
-    dailyCalorific: 2000,
-    macroType: 'protein'
+    dailyCalorific: 1900,
+    macroType: 'protein',
+    initialMinValue: 30,
+    initialMaxValue: 33,
 };

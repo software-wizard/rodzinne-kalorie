@@ -1,7 +1,7 @@
 import React from 'react';
 import Label from "../../atoms/Label/Label";
 import MealCard from "../MealCard/MealCard";
-import {MealDto} from "../../../data/Meal";
+import {MealDto} from "../../../data/dtos/Meal";
 import GridTemplate from "../../Templates/GridTemplate/GridTemplate";
 import {Size} from "../../../GlobalStyle";
 
