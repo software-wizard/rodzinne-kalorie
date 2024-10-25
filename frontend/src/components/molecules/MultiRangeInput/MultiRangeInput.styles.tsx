@@ -33,16 +33,16 @@ const ValueBase = styled.div`
 `;
 
 export const MinValue = styled(ValueBase)<{ left: number }>`
-    top: 3rem;
+    left: ${({left}) => left - 30}%;
+    top: -0.1rem;
     transform: translate(0, -100%);
-    left: ${({left}) => left - 15}%;
     transition: left 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 `;
 
 export const MaxValue = styled(ValueBase)<{ right: number }>`
-    top: -0.7rem;
+    right: ${({right}) => right - 30}%;
+    bottom: 3rem;
     transform: translate(0, 100%);
-    right: ${({right}) => right - 15}%;
     transition: right 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 `;
 

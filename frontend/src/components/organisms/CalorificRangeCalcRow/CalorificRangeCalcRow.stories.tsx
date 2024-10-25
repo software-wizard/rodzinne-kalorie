@@ -1,7 +1,7 @@
 import React from 'react';
 import {Meta, StoryFn} from '@storybook/react';
-import CalorificManageTable from "./CalorificManageTable";
-import CalorificRangeCalcRow, {CalorificRangeCalcRowProps} from "./CalorificManageTable";
+import CalorificManageTable from "./CalorificRangeCalcRow";
+import CalorificRangeCalcRow, {CalorificRangeCalcRowProps} from "./CalorificRangeCalcRow";
 
 export default {
     title: 'Components/nowy/CalorificRangeCalcRow',

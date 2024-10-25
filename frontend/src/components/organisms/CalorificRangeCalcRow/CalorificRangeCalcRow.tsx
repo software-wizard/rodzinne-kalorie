@@ -7,20 +7,18 @@ import MultiRangeInput from "../../molecules/MultiRangeInput/MultiRangeInput";
 export type CalorificRangeCalcRowProps = {
     dailyCalorific: number;
     macroType: 'protein' | 'carbs' | 'fat';
+    initialMinValue: number;
+    initialMaxValue: number;
 };
 
 const CalorificRangeCalcRow: React.FC<CalorificRangeCalcRowProps> = (props) => {
-    const headerColor = COLOR_GREEN.color100
-    const initialMinValue = 40;
-    const initialMaxValue = 60;
+    const headerColor = COLOR_GREEN.color100;
     const macroFactor = props.macroType === 'fat' ? 9 : 4;
 
-
-    const [rangeFromInput, setRangeFromInput] = useState({min: initialMinValue, max: initialMaxValue});
+    const [rangeFromInput, setRangeFromInput] = useState({min: props.initialMinValue, max: props.initialMaxValue});
     useEffect(() => {
-
-        setRangeFromInput({min: initialMinValue, max: initialMaxValue});
-    }, []);
+        setRangeFromInput({min: props.initialMinValue, max: props.initialMaxValue});
+    }, [props.initialMinValue, props.initialMaxValue]);
 
     const handleRangeChange = (min: number, max: number) => {
         setRangeFromInput({min, max});
@@ -41,21 +39,21 @@ const CalorificRangeCalcRow: React.FC<CalorificRangeCalcRowProps> = (props) => {
     function getText() {
         switch (props.macroType) {
             case "protein":
-                return "Białko"
+                return "Białko";
             case "carbs":
-                return "Węgle"
+                return "Węgle";
             case "fat":
-                return "Tłuszczyk"
+                return "Tłuszczyk";
         }
     }
 
     return (
         <GridTemplate gap={'1rem'} direction={'column'} gridTemplateColumns={"repeat(4,1fr)"}>
             <Label size={Size.L} backgroundColor={headerColor} text={getText()}></Label>
-            <MultiRangeInput initialMinValue={initialMinValue} initialMaxValue={initialMaxValue}
-                             onChange={handleRangeChange}/>
-            <Label size={Size.L} backgroundColor={headerColor} text={calculateGrams()}></Label>
-            <Label size={Size.L} backgroundColor={headerColor} text={calculateKcalc()}></Label>
+            <MultiRangeInput initialMinValue={props.initialMinValue} initialMaxValue={props.initialMaxValue}
+                             onChange={handleRangeChange} unit={'%'}/>
+            <Label size={Size.L} backgroundColor={'x'} text={calculateGrams()}></Label>
+            <Label size={Size.L} backgroundColor={'x'} text={calculateKcalc()}></Label>
         </GridTemplate>
     );
 };
