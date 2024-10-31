@@ -1,0 +1,17 @@
+import React from 'react';
+import { Styled${NAME} } from './${NAME}.styles';
+
+export type ${NAME}Props = {
+
+};
+
+const ${NAME}: React.FC<${NAME}Props> = ({...props}) => {
+
+    return (
+        <Styled${NAME}>
+            <p>${NAME}</p>
+        </Styled${NAME}>
+    );
+};
+
+export default ${NAME};

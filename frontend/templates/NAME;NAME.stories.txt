@@ -1,0 +1,15 @@
+import React from 'react';
+import { StoryFn, Meta } from '@storybook/react';
+import ${NAME}, { ${NAME}Props } from './${NAME}';
+
+export default {
+    title: 'Components/nowy/${NAME}',
+    component: ${NAME},
+} as Meta;
+
+const Template: StoryFn<${NAME}Props> = (args) => <${NAME} {...args} />;
+
+export const DEFAULT = Template.bind({});
+DEFAULT.args = {
+    name: '${NAME}',
+};

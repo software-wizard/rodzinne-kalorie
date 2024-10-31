@@ -1,0 +1,11 @@
+import styled from 'styled-components';
+import { ${NAME}Props } from './${NAME}';
+
+export const Styled${NAME} = styled.div<${NAME}Props>`
+    border: GREEN 2px solid;
+    box-sizing: border-box;
+    
+    width: 200px;
+    height: 100px;
+`;
+export default Styled${NAME};
